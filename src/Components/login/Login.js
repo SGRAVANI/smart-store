@@ -27,7 +27,7 @@ export default function Login() {
       if(!signupstatus)
     {
     console.log(user.email);
-    navigate("/")
+    navigate("/smart-store")
     }    
   }
 },[user])
@@ -47,7 +47,7 @@ export default function Login() {
          if(user)
           {
           console.log(user.email);
-          navigate("/")
+          navigate("/smart-store")
           }
         //  else{
         //     navigate("/login")
@@ -75,7 +75,7 @@ export default function Login() {
       e.preventDefault();
       try {
         await SignInWithGoogle();
-        navigate("/");
+        navigate("/smart-store");
       } catch (error) {
         console.log(error.message);
       }
