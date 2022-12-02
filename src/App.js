@@ -27,7 +27,7 @@ function App() {
    
 
   
-   <BrowserRouter>
+   <BrowserRouter basename="/smart-store">
   
   
     <div className="App">

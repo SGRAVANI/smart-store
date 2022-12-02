@@ -8,6 +8,7 @@ import ContextData from './Products/Context/Context';
 import CartNotification from './Cart/CartNotification';
 import { useUserAuth } from './Products/Context/ContextAPI';
 import "./NavBar.css";
+import Logo1 from "./logo-1.png";
 function NavBar() {
     let navigate=useNavigate();
     let con=useContext(ContextData);
@@ -73,7 +74,7 @@ navigate("/search")
                 <NavLink className="navbar-brand" to="/" style={{paddingTop:"0",
     
     paddingBottom: "0"
-}}><img className="img-fluid" src="../e-com-assets/logo-1.png"/></NavLink>
+}}><img className="img-fluid" src={Logo1}/></NavLink>
 
 
                 

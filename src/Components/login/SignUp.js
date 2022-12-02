@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import { useUserAuth } from '../Products/Context/ContextAPI';
 import "./SignUp.css"
+import SignupImage from "./signup.png"
+import Logo from "./logo-login.png";
 export default function SignUp() {
     const[email,setEmail]=useState("");
     const[pwd,setPwd]=useState("");
@@ -37,11 +39,11 @@ export default function SignUp() {
       <div className="row d-flex justify-content-center align-items-center h-100">
       <div className='col-2 col-sm-3 col-md-4 col-lg-4 col-xl-4 smallDiv1' style={{backgroundColor:"rgba(255 ,62, 108,0.8)"}}  >
         <div style={{height:"490px" ,width:"100%",position:"relative"}} className="d-flex flex-column px-2 py-3" >
-          <div style={{backgroundColor:"rgba(255,255,255,0.7)",borderRadius:"10px"}} className="d-flex flex-row flex-wrap  py-2 px-1"><img src="../../../e-com-assets/logo-login.png"  style={{objectFit:"contain"}} className="w-40 pe-2"/>
+          <div style={{backgroundColor:"rgba(255,255,255,0.7)",borderRadius:"10px"}} className="d-flex flex-row flex-wrap  py-2 px-1"><img src={Logo}  style={{objectFit:"contain"}} className="w-40 pe-2"/>
           <span className='lead fw-bold fs-3 ' style={{color:"rgb(132,131,131)"}}> Smart Store</span></div>
           <div className='pt-5 display-5 fw-bold' style={{color:"white"}}>Sign Up</div>
           <div className='pt-4 fs-5 fw-bold signup-text-setting 'style={{color:"white"}}>Get access to your cart items After Login</div>
-          <div style={{position:"absolute", bottom:"0",textAlign:"center"}}><img src="../../../e-com-assets/signup.png" className='image-fluid signup-image'  /></div>
+          <div style={{position:"absolute", bottom:"0",textAlign:"center"}}><img src={SignupImage} className='image-fluid signup-image'  /></div>
         </div>
       </div>
         <div className="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5">

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./AboutUs.css"
+import About1 from"./about-1.png";
 import Services from './Services'
 import Trusted from './Trusted'
 export default function AboutUs() {
@@ -10,7 +11,7 @@ export default function AboutUs() {
       <div className='row '>
         <div className="col-sm-6 col-md-5">
           <div className=" px-lg-5 image-top-setting ">
-            <img src="../../../e-com-assets/about-1.png" className=' image-top-size-setting '  />
+            <img src={About1} className=' image-top-size-setting '  />
           </div>
         </div>
         <div className="col-sm-6 col-md-7 my-5 text-break">

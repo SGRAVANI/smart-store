@@ -8,6 +8,9 @@ import "./Login.css"
 import SignUpAlert from './SignUpAlert';
 //  import GoogleButton from "react-google-button";
 //  import 'bootstrap/dist/css/bootstrap.min.css';
+import LogoLogin from "./logo-login.png";
+import ShoppingLogin from "./shopping-login.png";
+import GooglBt from "./google.png";
 export default function Login() {
     const[email,setEmail]=useState("");
     const[pwd,setPwd]=useState("")
@@ -84,11 +87,11 @@ export default function Login() {
       <div className="row d-flex justify-content-center align-items-center h-100" >
       <div className='col-2 col-sm-3 col-md-4 col-lg-4 col-xl-4 smallDiv' style={{backgroundColor:"rgba(255 ,62, 108,0.8)"}}  >
         <div style={{height:"490px" ,width:"100%",position:"relative"}} className="d-flex flex-column px-2 py-3" >
-          <div style={{backgroundColor:"rgba(255,255,255,0.7)",borderRadius:"10px"}} className="d-flex flex-row flex-wrap  py-2 px-1"><img src="../../../e-com-assets/logo-login.png"  style={{objectFit:"contain"}} className="w-40 pe-2"/>
+          <div style={{backgroundColor:"rgba(255,255,255,0.7)",borderRadius:"10px"}} className="d-flex flex-row flex-wrap  py-2 px-1"><img src={LogoLogin}  style={{objectFit:"contain"}} className="w-40 pe-2"/>
           <span className='lead fw-bold fs-3 w-60' style={{color:"rgb(132,131,131)"}}> Smart Store</span></div>
           <div className='pt-5 display-6 fw-bold' style={{color:"white"}}>Login</div>
           <div className='pt-4 fs-3 fw-bold'style={{color:"white"}}>Get access to your cart items</div>
-          <div style={{position:"absolute", bottom:"0"}}><img src="../../../e-com-assets/shopping-login.png" className='image-fluid' style={{objectFit:"contain",width:"60%",height:"60%" }} /></div>
+          <div style={{position:"absolute", bottom:"0"}}><img src={ShoppingLogin} className='image-fluid' style={{objectFit:"contain",width:"60%",height:"60%" }} /></div>
         </div>
       </div>
         <div className="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5">
@@ -128,7 +131,7 @@ export default function Login() {
 
 
                  
-   <img src="../../e-com-assets/google.png" className='me-2' width="25" height="25" />
+   <img src={GooglBt} className='me-2' width="25" height="25" />
                   Sign in with google</button>  
                      {/* <GoogleButton
             className="g-btn"

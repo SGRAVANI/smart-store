@@ -4,6 +4,7 @@ import {createContext,useContext} from"react";
 import ContextData from './Context/Context';
 import CardForProductPage from './CardForProductPage';
 import "./Products.css"
+import Cat from "./categories.png";
 // import { X } from '../../App';
 export default function Products() {
   let data=useContext(ContextData);
@@ -142,7 +143,7 @@ let c;
          
         <div  style={{paddingTop:"100px",position:"sticky",top:"1px",height:"100vh",backgroundColor:"rgb(255,255,255)",border:"1px solid rgb(227,230,234)"}} className= "col-5 col-sm-4 col-md-3 col-lg-2 d-flex align-items-left justify-context-center gap-3 flex-column" >
           <div className='text-center category-ani'>
-            <img src="../../../e-com-assets/categories.png" width="80px" height="80"  />
+            <img src={Cat} width="80px" height="80"  />
           </div>
           <div  className='lead fw-bold'><span className='add1 pb-2'>CATEGORY FILTER</span></div>
 {/*                       
