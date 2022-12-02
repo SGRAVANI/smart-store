@@ -27,8 +27,8 @@ function App() {
    
 
   
-   <BrowserRouter basename="/smart-store">
-  
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
+   
   
     <div className="App">
      
@@ -38,7 +38,7 @@ function App() {
       
     </div>
     <Routes>
-      <Route exact path="/smart-store"  element={<Home/>} />
+      <Route  path="/" exact  element={<Home/>} />
       <Route path="/products" element={<Products/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/cart" element={<Cart/>} />

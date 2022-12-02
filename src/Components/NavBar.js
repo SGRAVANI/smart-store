@@ -27,7 +27,7 @@ function NavBar() {
 {
     try{
         await LogOut()
-        navigate("/smart-store")
+        navigate("/")
     }
     catch(e){
         console.log(e.message)
@@ -71,7 +71,7 @@ navigate("/search")
                 }}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <NavLink className="navbar-brand" to="/smart-store" style={{paddingTop:"0",
+                <NavLink className="navbar-brand" to="/" style={{paddingTop:"0",
     
     paddingBottom: "0"
 }}><img className="img-fluid" src={Logo1}/></NavLink>
