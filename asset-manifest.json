@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/smart-store/static/css/main.7ae1f5cf.css",
-    "main.js": "/smart-store/static/js/main.0c90c02a.js",
+    "main.js": "/smart-store/static/js/main.b73229d0.js",
     "static/js/787.a91053ce.chunk.js": "/smart-store/static/js/787.a91053ce.chunk.js",
     "static/media/noresultfound.gif": "/smart-store/static/media/noresultfound.825635cf27aaa696a35b.gif",
+    "static/media/about-1.png": "/smart-store/static/media/about-1.d14ecc532052f5f18ca7.png",
     "static/media/jew.png": "/smart-store/static/media/jew.0379f11f904c55d656f9.png",
     "static/media/clothes-model2.png": "/smart-store/static/media/clothes-model2.64f31877799797a2d55b.png",
     "static/media/QLEDt.png": "/smart-store/static/media/QLEDt.0696099d41226fa87d5a.png",
     "static/media/man.png": "/smart-store/static/media/man.3879587d12ca9be787ef.png",
+    "static/media/shopping-login.png": "/smart-store/static/media/shopping-login.37f565c337cf22afc1f3.png",
     "static/media/jew2.png": "/smart-store/static/media/jew2.737fbd76e2127aa71e16.png",
+    "static/media/google.png": "/smart-store/static/media/google.c6066060452fe811358d.png",
     "static/media/peakpx.jpg": "/smart-store/static/media/peakpx.e751766b2586a4dceb7f.jpg",
+    "static/media/signup.png": "/smart-store/static/media/signup.99c2b8f7e662ef8b8449.png",
     "static/media/bg.jpg": "/smart-store/static/media/bg.2abf5226fc54a64f77e5.jpg",
     "static/media/bag.svg": "/smart-store/static/media/bag.52093bcbc87edb17ef6ea6ab010dda4e.svg",
     "static/media/logo.svg": "/smart-store/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/smart-store/index.html",
     "main.7ae1f5cf.css.map": "/smart-store/static/css/main.7ae1f5cf.css.map",
-    "main.0c90c02a.js.map": "/smart-store/static/js/main.0c90c02a.js.map",
+    "main.b73229d0.js.map": "/smart-store/static/js/main.b73229d0.js.map",
     "787.a91053ce.chunk.js.map": "/smart-store/static/js/787.a91053ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ae1f5cf.css",
-    "static/js/main.0c90c02a.js"
+    "static/js/main.b73229d0.js"
   ]
 }
