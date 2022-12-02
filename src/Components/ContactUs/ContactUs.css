@@ -1,0 +1,45 @@
+.border-animated{
+ 
+ border:2px solid ;
+ border-radius: 20%;
+ transition: border-width 1s linear;
+ border-image:linear-gradient(to right,#f41cb2,#3299d9) 3 /7px ;
+ 
+}
+
+
+.border-animated:hover{
+ 
+    border-width: 5px;
+   }
+
+   .add {
+    position: relative;
+   }
+   .add:before{
+    content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	border-bottom: solid 5px ;
+    border-image:linear-gradient(to right,rgb(237, 76, 175),rgb(0, 115, 255)) 3 /7px ;
+	animation: border_anim 3s linear forwards;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+   
+.f{
+
+}
+.f:focus {
+    border-color: rgb(255,62,108);
+    box-shadow: 0 0 0 0.2rem rgba(241, 27, 77, 0.325);
+} 

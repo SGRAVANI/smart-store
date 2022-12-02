@@ -1,0 +1,36 @@
+.contact-p::first-letter{
+    font-size:30px;
+    font-weight: bold;
+    color:rgb(241, 90, 115);
+
+}
+.image-top-setting{}
+/* .image-top-size-setting{
+    width:70%;
+    height: 70%;
+} */
+@media screen and (max-width:768px) {
+    /* .image-top-setting{
+        text-align: center;
+    } */
+    /* .image-top-size-setting{
+        width:50% !important; 
+        height: 50% !important;
+    } */
+    .container{
+        margin-left:30px !important;
+        margin-right: 30px !important;
+        max-width: 95%;
+
+    }
+    .image-top-setting{
+        padding-top: 70%;
+    }
+}
+@media screen and (max-width:576px) {
+    .image-top-setting{
+        padding-top: 0 !important;
+        text-align: center;
+    }
+}
+

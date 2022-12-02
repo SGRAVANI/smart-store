@@ -1,0 +1,9 @@
+.text-left{
+
+}
+@media screen and (max-width:756px)
+{
+    .text-left{
+        text-align: center;
+    }
+}

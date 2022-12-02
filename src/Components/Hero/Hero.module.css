@@ -1,0 +1,48 @@
+.imgStyleRight{
+object-fit: contain;
+width: 200px;
+height: 180px;
+}
+.slide{
+    background-color:rgb(227,84,3);
+    width:100%;
+    height:200px;
+    text-align:center;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+      flex-direction:row;
+      gap:30px;
+}
+.h3Style{
+
+}
+.h5Style{
+
+}
+@media screen and (max-width:630px) {
+    .imgStyleRight{
+        object-fit: contain;
+        width: 180px;
+        height: 150px;
+        }
+    .slide{
+        gap:2px;
+    } 
+    .h3Style{
+        font-size: 20px;
+
+    }  
+    .h5Style{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:480px) {
+    .h3Style{
+        font-size: 15px;
+
+    }  
+    .h5Style{
+        font-size: 10px;
+    }
+}

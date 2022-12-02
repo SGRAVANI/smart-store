@@ -1,0 +1,6 @@
+.navBarPos{
+    position: sticky !important;
+    width:100% !important;
+    top:2px !important;
+    /* left:0px !important; */
+}

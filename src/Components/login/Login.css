@@ -1,0 +1,49 @@
+.padding{}
+.smallDiv{
+    display: block;;
+}
+.signupbtn{
+    background-color: rgb(255,62,108)
+}
+.signupbtn:hover{
+    transition: all 1s;
+    background-color:rgb(209, 49, 86) ;
+}
+@media screen  and (max-width:768px){
+    
+    .padding-body{
+        padding-left:30px !important;
+        padding-right:30px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+    }
+    .smallDiv{
+        height: 500px;
+    }
+    .signupbtn{
+       font-size: 15px;
+    }
+   
+}
+@media screen and(max-width:622px) {
+    .signupbtn{
+        font-size: 10px;
+     }
+       
+}
+@media screen  and (max-width:576px){
+    
+    .padding-body{
+        padding-left:10px !important;
+        padding-right:10px !important;
+
+    }
+    .smallDiv{
+     display: none;
+    }
+    .signupbtn{
+        font-size: 20px;
+     }
+
+}
