@@ -47,7 +47,7 @@ export default function ContactUs() {
                   <div className="mb-3 row d-flex align-items-center justify-content-center ">
                     {/* <label for="email" className="col-4 col-form-label">Email-Id</label> */}
                     <div className=" col-9" >
-                      <input type="email" className="form-control f" name="Email" id="email" placholder="Enter Your Email Address" value={email} onChange={handleChange}required/>
+                      <input type="email" className="form-control f" name="Email" id="email" placholder="Enter Your Email Address" value={email?email:"Enter Your Email Address"} onChange={handleChange}required/>
                     </div>
                   </div>
                   <div className="mb-3 row d-flex align-items-center justify-content-center ">
