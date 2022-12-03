@@ -22,6 +22,7 @@ import ProductsCarouselSkeleton from './Components/Products/ProductCarouselSkele
 import HeroSkeleton from './Components/Hero/HeroSkeleton';
 import SignUp from './Components/login/SignUp';
 import SliderTest from './Components/Hero/SliderTest';
+import OrderData from './Components/Cart/OrderData';
 function App() {
  return (
    
@@ -48,6 +49,7 @@ function App() {
       <Route path="/search" element={<SeachPage/>} />
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/productdetail/$:Id" element={<ProductDetail/>}/>
+      <Route path="/orderdata" element={<OrderData/>} />
       {/* <Route path="electronics" element={} />
       <Route path="clothing" element={} /> */}
 

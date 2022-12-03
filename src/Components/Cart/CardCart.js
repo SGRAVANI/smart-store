@@ -1,21 +1,30 @@
 import React from 'react'
 import ContextData from '../Products/Context/Context'
 import { useContext } from 'react'
+import AlertAdd from '../Products/AlertAdd';
+import { useState } from 'react';
+//import DeleteConfirm from './DeleteConfirm';
+
+// const [modalShow1, setModalShow1] = useState(false);
 export default function CardCart(props) {
     let con=useContext(ContextData);
+    let [ alertsToAddRemoveItems,setAlertToAddRemoveItems]= useState({itemAdd:false,itemRemove:false,propsdata:false})
     function handleAdd()
     {
        // let i=props.id;
        let item={id:props.id,count:1}
         con.add(item)
+        setAlertToAddRemoveItems({itemAdd:true,propsdata:!alertsToAddRemoveItems.propsdata})
+
     }
     function handleRemove()
     {
       let item={id:props.id,count:1}
       con.remove(item);
+      setAlertToAddRemoveItems({itemRemove:true,propsdata:!alertsToAddRemoveItems.propsdata})
     }
   return (
-   
+    <div>
     <div className='border border-secondary mt-2 px-md-2 py-1'>
     <div className='row'>
     <div  className='col-5'>
@@ -41,9 +50,14 @@ export default function CardCart(props) {
     </div>
 
     </div>
-
+    
     </div>
+    {/* <DeleteConfirm
+  show={modalShow}
+  onHide={() => setModalShow(false)} onOk={handleOK} />  */}
 
-  
+    {alertsToAddRemoveItems.itemAdd? <AlertAdd data={alertsToAddRemoveItems.propsdata} variant="success" message="Item is Added to cart!" />:""}
+    {alertsToAddRemoveItems.itemRemove? <AlertAdd data={alertsToAddRemoveItems.propsdata} variant="danger" message="Item is Removed from cart!" />:""}
+     </div>
   )
 }

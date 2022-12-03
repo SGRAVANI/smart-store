@@ -4,7 +4,7 @@ import ContextData from './Context/Context';
 import { useUserAuth } from './Context/ContextAPI';
 import "./ProductDetails.css";
 import AlertDismissible from './AlertDismissible';
-
+import AlertAdd from "./AlertAdd";
 export default function ProductDetail() {
     let cont=useContext(ContextData);
     let navigate=useNavigate();
@@ -14,6 +14,7 @@ export default function ProductDetail() {
     let [userStatus,setUserStatus]=useState(false);
     let [setAlert,setAlertOnClick]=useState(false);
     let [propsdata,setPropsData]=useState(false);
+    let[alertsToAddItems,setAlertsToAddItems]=useState({show:false,propsdata:false});
     console.log("new p is",p)
     //setP(cont.displayItems);
     const objId=useParams();
@@ -39,6 +40,7 @@ export default function ProductDetail() {
         let item={id:targetItem.id,count:1}
         console.log("Item is ",item);
         cont.add(item);
+        setAlertsToAddItems({show:true,propsdata:!alertsToAddItems.propsdata});
         } 
     }
     function handleCart()
@@ -66,6 +68,7 @@ export default function ProductDetail() {
                 <br></br>
                 <div>
               {setAlert? <AlertDismissible data={propsdata} />:""}
+              {alertsToAddItems.show? <AlertAdd data={alertsToAddItems.propsdata} variant="success" message="Item is Added to cart!" />:""}
               <button className=" btN btnStyle btnLg fw-bold margin-setting" onClick={handleAdd}  > ADD TO BAG  <i className="fa-solid fa-bag-shopping ms-2"></i></button>
               <button className="btn btn-primary btn-md   fw-bold" onClick={handleCart} > GO TO CART 🛒 </button>
               </div>

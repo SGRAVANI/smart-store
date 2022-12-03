@@ -1,0 +1,250 @@
+.OrderNotFoundSetting{
+    z-index:-1;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.empty-button-setting{
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* width:10% ;        */
+}
+.text-set-empty-order{
+    top:72%;
+    left:50%;
+    width: 17%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: inline-block;
+     
+}
+.heading-set{
+    top:60%;
+    left:50%;
+    width: 23%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: inline-block;
+   
+}
+.outerDivSetting{
+padding-top:100px;
+}
+@media screen and (max-width:1200px)
+{
+    .heading-set{
+       
+        left:50%;
+        width: 23%;
+           
+    }
+    .text-set-empty-order{
+        /* top:72%;
+        left:50%; */
+        width: 19%;
+        /* transform: translate(-50%,-50%);
+        position: absolute;
+        display: inline-block; */
+         
+    }
+    
+}
+@media screen and (max-width:1150px)
+{
+    .heading-set{
+       
+        left:50%;
+        width: 23%;
+       
+       
+    }
+}
+@media screen and (max-width:1000px)
+{
+    .heading-set{
+       
+        left:50%;
+        width: 23%;
+       
+       
+    }
+    .text-set-empty-order{
+        /* top:72%;
+        left:50%; */
+        width: 24%;
+        /* transform: translate(-50%,-50%);
+        position: absolute;
+        display: inline-block; */
+         
+    }
+}
+@media screen and (max-width:843px)
+{
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+       font-size:large;
+       
+    }
+
+}
+@media screen and (max-width:755px)
+{
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+       font-size:medium;
+       width: 25%;
+       
+    }
+    .text-set-empty-order{
+         top:67%;
+        
+        width: 28%;
+        font-size: medium;
+        /* transform: translate(-50%,-50%);
+        position: absolute;
+        display: inline-block; */
+         
+    }
+    .empty-button-setting{
+      
+        top:78%;
+      
+    }
+}
+@media screen and (max-width:600px)
+{
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+       font-size:medium;
+       width: 30%;
+       
+    }
+}
+@media screen and (max-width:535px)
+{
+  
+    .text-set-empty-order{
+         top:70%;
+        
+        width: 30%;
+        font-size: medium;
+        /* transform: translate(-50%,-50%);
+        position: absolute;
+        display: inline-block; */
+         
+    }
+    .empty-button-setting{
+        position: absolute;
+        top:78%;
+        font-size:12px !important;
+        /* width: 23%; */
+        /* width:10% ;        */
+    }
+}
+@media screen and (max-width:504px)
+{
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+        top:55%;
+       font-size:small;
+       width: 30%;
+       
+    }
+    .outerDivSetting{
+        padding-top:50px;
+        }
+
+        .text-set-empty-order{
+            top:63%;
+           
+           width: 30%;
+           font-size: small;
+           /* transform: translate(-50%,-50%);
+           position: absolute;
+           display: inline-block; */
+            
+       }
+       .empty-button-setting{
+       
+        top:72%;
+        font-size:11px !important;
+        /* width: 23%; */
+        /* width:10% ;        */
+    }
+}
+@media screen and (max-width:400px)
+{
+    
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+        top:55%;
+       font-size:12px !important;
+       width: 30%;
+       
+    }
+        .text-set-empty-order{
+          
+           top:61%;
+           width: 30%;
+           font-size: 10px;
+           /* transform: translate(-50%,-50%);
+           position: absolute;
+           display: inline-block; */
+            
+       }
+       .empty-button-setting{
+       
+        top:67%;
+        font-size:8px !important;
+        /* width: 23%; */
+        /* width:10% ;        */
+    }
+}
+@media screen and (max-width:300px)
+{
+    
+    .heading-set{
+       
+        /* left:50%;
+        width: 23%; */
+        top:55%;
+       font-size:8px !important;
+       width: 30%;
+       
+    }
+    
+        .text-set-empty-order{
+          
+           top:58%;
+           width: 30%;
+           font-size: 6px;
+           /* transform: translate(-50%,-50%);
+           position: absolute;
+           display: inline-block; */
+            
+       }
+       .empty-button-setting{
+       
+        top:63%;
+        font-size:5px !important;
+        /* height: 9px !important; */
+        display: inline-block;
+        padding:1px;
+        /* align-items: center; */
+        /* width: 23%; */
+        /* width:10% ;        */
+    }
+}

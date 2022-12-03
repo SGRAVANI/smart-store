@@ -23,6 +23,10 @@ function NavBar() {
     console.log("from navbar:",user.email);
     
 }
+function handleOrder()
+{
+    navigate("/orderdata")
+}
  async function handleLogOut()
 {
     try{
@@ -88,15 +92,22 @@ navigate("/search")
                             </NavLink>
                         </li> 
                         <li className="nav-item">
-                            <NavLink className="nav-link " to="aboutus" aria-current="page">About Us 
+                            <NavLink className="nav-link " to="aboutus" aria-current="page">About
                             {/* <span className="visually-hidden">(current)</span> */}
                             </NavLink>
                         </li> 
                         <li className="nav-item">
-                            <NavLink className="nav-link " to="contact" aria-current="page">Contact Us 
+                            <NavLink className="nav-link " to="contact" aria-current="page">Contact
                             {/* <span className="visually-hidden">(current)</span> */}
                             </NavLink>
-                        </li> 
+                        </li>
+                        {(!signupstatus && user )?
+                        <li className="nav-item">
+                        <NavLink className="nav-link " to="orderdata" aria-current="page">View Order
+                       
+                        </NavLink>
+                    </li> 
+                        : ""} 
                         {/* <!-- <li className="nav-item">
                             <a className="nav-link active" href="#" aria-current="page">Home <span className="visually-hidden">(current)</span></a>
                         </li> --> */}
@@ -108,7 +119,7 @@ navigate("/search")
                         <li className=" navbar-brand nav-item">
                             <a className="nav-link btn btn-primary text-white d-inline-block px-3 px-m-2 px-lg-3 btn-sm mx-md-1"  aria-current="page"onClick={handleLogOut} >Logout </a>
                         </li>}
-                        
+                       
                         {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                             <div className="dropdown-menu" aria-labelledby="dropdownId">
