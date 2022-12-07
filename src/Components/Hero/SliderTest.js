@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import ClothesModel from "./clothes-model2.png";
+
 //import Model2 from "./clothes.png";
 import Qledt from "./QLEDt.png";
 import Man from "./man.png";
@@ -56,9 +57,9 @@ function SliderTest() {
             
             <div style={{backgroundColor:"#092e2b",width:"100%",height:"200px",textAlign:"center", display:"flex",alignItems:"center",justifyContent:"center", flexDirection:"row",gap:"30px"}} >  
               <div><img src={Qledt} width="200px" height="150px"  alt="..."/> </div>
-              <div><h3 style={{color:"white"}} >SAMSUNG QLED Gaming Monitor</h3>
-               <h5 style={{color:"white"}}><s>1299.99$ </s>From 999.99$*</h5>
-              <h6 style={{color:"white"}}>Super Ultra wide Screen</h6></div>    
+              <div><h3 className={st.h3Style} style={{color:"white"}} >SAMSUNG QLED Gaming Monitor</h3>
+               <h5 className={st.h5Style} style={{color:"white"}}><s>1299.99$ </s>From 999.99$*</h5>
+              <h5 className={st.h5Style} style={{color:"white"}}>Super Ultra wide Screen</h5></div>    
             </div>
            
       

@@ -70,7 +70,7 @@ export default function ProductDetail() {
               {setAlert? <AlertDismissible data={propsdata} />:""}
               {alertsToAddItems.show? <AlertAdd data={alertsToAddItems.propsdata} variant="success" message="Item is Added to cart!" />:""}
               <button className=" btN btnStyle btnLg fw-bold margin-setting" onClick={handleAdd}  > ADD TO BAG  <i className="fa-solid fa-bag-shopping ms-2"></i></button>
-              <button className="btn btn-primary btn-md   fw-bold" onClick={handleCart} > GO TO CART 🛒 </button>
+              <button className="btn btn-primary btn-md   fw-bold" onClick={handleCart} > GO TO CART   <i className="fa-solid fa-cart-shopping ms-1"></i> </button>
               </div>
               <hr></hr>
               <div className="lead fw-bold">PRODUCT DETAILS <i className="fa-regular fa-rectangle-list"></i></div>

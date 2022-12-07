@@ -35,7 +35,10 @@ export default function ProductCard(props) {
         <div >{props.rating.rate} <i style={{color:"rgb(49,181,159)"}} className="fa-solid fa-star me-1 mb-3"></i> ({props.rating.count})</div>
      </div>
     <div>
-    <button className={`${st.btN} ${st.btnStyle} ${st.btnLg}`}  onClick={handleClick}> BUY NOW 🛒</button>
+    <button className={`${st.btN} ${st.btnStyle} ${st.btnLg}`}  onClick={handleClick}> BUY NOW  
+    <i className="fa-solid fa-cart-shopping ms-2"></i>
+    
+    </button>
     </div>
     </div>
     </div>

@@ -9,6 +9,7 @@ import "./Cart.css"
 import s from "./EmptyCart.module.css"
 import DeleteConfirm from "./DeleteConfirm"
 import { useNavigate } from 'react-router-dom';
+import st from "../Products/Products.module.css"
 export default function OrderData() {
 //let [cartadd,setCartadd]=useState({});
 //let [cartsub,setCartsub]=useState({});
@@ -57,9 +58,9 @@ console.log(x)
  }
   return (
     
-   <div>
+   <div >
 {cont.order.length==0?<EmptyOrder/>:   
-    <div style={{paddingTop:"80px"}}>
+    <div className={st.navSetting}>
     <DeleteConfirm
   show={modalShow}
   onHide={() => setModalShow(false)} /> 

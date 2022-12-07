@@ -4,6 +4,7 @@ import ProductsCarousel from '../Products/ProductsCarousel'
 import HeroSkeleton from '../Hero/HeroSkeleton'
 import SliderTest from '../Hero/SliderTest'
 import { useState,useEffect } from 'react'
+import s from "../Products/Products.module.css"
 export default function Home() {
   let[f,setF]=useState(true);
   useEffect(()=>{
@@ -23,7 +24,7 @@ export default function Home() {
     }
   }
   return (
-    <div style={{paddingTop:"70px"}}>
+    <div className={s.navSetting}>
          {loadHero()}
         {/* <Hero/> */}
       <ProductsCarousel/>

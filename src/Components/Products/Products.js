@@ -187,7 +187,7 @@ let c;
         </div>
         {/* </div> */}
         
-        <div  className='col-6 col-sm-8 col-md-9 col-lg-10 border '>
+        <div  className='col-7 col-sm-8 col-md-9 col-lg-10 border '>
         
       <div className='fs-6 fw-bold mt-2 px-3'   style={{textAlign:"right"}}>Total {c} Items Found</div>
     

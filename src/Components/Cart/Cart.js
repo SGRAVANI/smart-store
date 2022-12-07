@@ -97,7 +97,7 @@ console.log(x)
 
       </div>
     <div className='col-md-5'>
-       <div className=' mx-5 px-5 my-5 my-md-1  text-left ' >
+       <div className=' mx-3  my-5 px-md-3 my-md-1 mx-sm-3 px-sm-5  text-left ' >
         <div className='lead fw-bold    '>PRICE DETAILS  <span  style={{fontSize:"18px"}}>({cont.total} Items)</span></div>
        <div className='d-flex justify-content-between  align-items-center '>
 

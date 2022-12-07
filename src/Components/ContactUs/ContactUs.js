@@ -3,6 +3,7 @@ import "./ContactUs.css"
 import "../Products/ProductDetails.css"
 import { useState } from 'react';
 import { useUserAuth } from '../Products/Context/ContextAPI';
+import s from "../Products/Products.module.css"
 export default function ContactUs() {
   const {user}=useUserAuth();
   
@@ -21,7 +22,7 @@ export default function ContactUs() {
     
   }
   return (
-    <div style={{paddingTop:"75px"}}>
+    <div className={s.navSetting}>
       <div className='text-center'>
         <p className='py-1 lead fw-bold fs-3 lead'> Feel Free to Contact Us</p>
         </div>
