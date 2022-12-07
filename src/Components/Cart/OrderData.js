@@ -66,7 +66,7 @@ console.log(x)
   onHide={() => setModalShow(false)} /> 
    <div className='container-xxl'>
     <AlertAdd data={true} message="Your Order has been placed Successfully!!!" variant="success" />
-    <h1 style={{color:"rgba(0,0,0,0.7)"}}className='text-center lead fw-bold fs-2 py-5'>ORDER SUMMARY</h1>
+    <h1 style={{color:"rgba(0,0,0,0.7)"}}className='text-center lead fw-bold fs-2 py-md-3'>ORDER SUMMARY</h1>
    <div className='lead'>Total Items : {cont.orderTotal}</div>
 
     <div className='row'>
@@ -77,7 +77,7 @@ console.log(x)
 
       </div>
     <div className='col-md-5'>
-       <div className=' mx-5 px-5 my-5 my-md-1  text-left ' >
+       <div className=' mx-3  my-5 px-md-3 my-md-1 mx-sm-3 px-sm-5  text-left ' >
         <div className='lead fw-bold    '>PRICE DETAILS  <span  style={{fontSize:"18px"}}>({cont.orderTotal} Items)</span></div>
        <div className='d-flex justify-content-between  align-items-center '>
 

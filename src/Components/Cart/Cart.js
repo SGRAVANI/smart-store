@@ -4,6 +4,7 @@ import { useContext,useState } from 'react'
 import CardCart from './CardCart';
 import EmptyCart from './EmptyCart';
 import "./Cart.css"
+import st from "../Products/Products.module.css";
 import s from "./EmptyCart.module.css"
 import { useNavigate } from 'react-router-dom';
 import CartConfirm from './CartConform';
@@ -77,7 +78,7 @@ console.log(x)
    
 
     { (cont.total==0 && empty)?<EmptyCart/>: 
-    <div style={{paddingTop:"80px"}}>
+    <div className={st.navSetting}>
        {/* <Button variant="primary" onClick={() => setModalShow(true)}>
         Launch vertically centered modal
       </Button> */}
